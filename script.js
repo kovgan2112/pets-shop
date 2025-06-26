@@ -83,7 +83,7 @@ const items = [{
         img: "./img/12.jpeg",
     },
 ];
-const container = document.getElementById("items-container");
+
 const template = document.getElementById("item-template");
 
 items.forEach(item => {
@@ -95,7 +95,7 @@ items.forEach(item => {
 
     clone.querySelector("h1").textContent = item.title;
     clone.querySelector("p").textContent = item.description;
-    clone.querySelector(".price").textContent = $ { item.price }₽;
+    clone.querySelector(".price").textContent = `${item.price}₽`;
 
     const tagsContainer = clone.querySelector(".tags");
     item.tags.forEach(tag => {
