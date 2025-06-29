@@ -83,7 +83,7 @@ const items = [{
         img: "./img/12.jpeg",
     },
 ];
-
+const container = document.querySelector("#shop-items");
 const template = document.getElementById("item-template");
 
 items.forEach(item => {
